@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--code for the HEADER PART.......-->
+<head>
+    <!--STYLE CSS code for HEADER............-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Hood Agra</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color:white;
+            color:black;
+        }
+        .logo {
+            font-size: 19px;
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: black;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        .cta {
+            display: flex;
+            align-items: center;
+        }
+        .cta a {
+            color:black;
+            text-decoration:none;
+            font-size: 16px;
+            margin-right: 20px;
+        }
+        .cta a.sign-up {
+            display: flex;
+            align-items: center;
+        }
+        .cta a.sign-up i {
+            margin-right: 5px;
+        }
+        .cta .explore {
+            display: flex;
+            align-items: center;
+            background-color: #f39c12;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .cta .explore i {
+            margin-left: 10px;
+            transform: rotate(45deg);
+        }
+ </style>
+
+    <!--CSS CODE for HERO SECTION.................-->
+<style>
+    .orange {
+        color: orange;
+    }
+    .white {
+        color: white;
+    }
+
+    section {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    .hero-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: purple;
+        color: white;
+        padding: 50px;
+        height: 65vh;
+    }
+    .tagline {
+        max-width: 60%;
+    }
+    .tagline h1 {
+        font-size: 3rem;
+        margin: 0 0 20px 0;
+    }
+    .join-button {
+        display: inline-flex;
+        align-items: center;
+        background-color: orange;
+        color: black;
+        padding: 10px 20px;
+        border-radius: 30px;
+        text-decoration: none;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+    .join-button .arrow {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        background-color: orange;
+        color: black;
+        border-radius: 50%;
+        margin-left: 10px;
+        padding: 10px;
+    }
+    .hero-gif img {
+        max-width: 200%;
+        height: auto;
+    }
+    @media (max-width: 768px) {
+        .hero-section {
+            flex-direction: column;
+            text-align: center;
+        }
+        .tagline {
+            max-width: 100%;
+        }
+        .hero-gif {
+            margin-top: 20px;
+        }
+    }
+</style>
+
+<!-- STYLE CSS code for HERO-FOOTER..........-->
+
+<style>
+    .hero {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+
+    .hero-footer {
+        background-color: #f8f8f8;
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .hero-footer button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 50px;
+        height: 50px;
+        border: none;
+        border-radius: 50%;
+        color: white;
+        font-size: 18px;
+        cursor: pointer;
+        margin-right:10px;
+    }
+
+    .button-advocate {
+        background-color: green;
+    }
+
+    .button-people {
+        background-color: purple;
+    }
+
+    .button-camera {
+        background-color: red;
+    }
+
+    .button-group {
+        background-color: skyblue;
+    }
+
+    .footer-item {
+        display: flex;
+        text-align: center;
+    }
+</style>
+    <!--CSS CODE for slider1.............-->
+    <style>
+        .blue{
+            color:blue;
+        }
+        .orange{
+            color:#f39c12;
+        }
+        .green{
+            color:green;
+        }
+        .sli-body {
+            margin-left: auto;
+            margin-right: auto;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+        .slider-container {
+            display: flex;
+            gap: 20px;
+        }
+        .slider {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 200px;
+            text-align: center;
+        }
+        .slider img {
+            width: 100%;
+            height: auto;
+        }
+        .slider-body {
+            padding: 20px;
+        }
+        .rating {
+            margin: 10px 0;
+        }
+        .rating span {
+            color: gold;
+        }
+        .slider-footer {
+            padding: 10px;
+            border-top: 1px solid #ddd;
+            background-color: #f9f9f9;
+        }
+        .sli-para{
+            color:"black";
+        }
+    </style>
+
+    <!--CSS CODE for BODY-PORTION...........-->
+    <style>
+        .body-portion {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin-left: auto;
+            margin-right: 90%;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            display: flex;
+            width: 80%;
+            border: 1px solid #ccc;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .left, .right{
+            padding: 20px;
+        }
+        .left {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f9f9f9;
+        }
+        .left img {
+            max-width: 100%;
+            height: auto;
+        }
+        .right {
+            flex: 1;
+            background-color: #fff;
+        }
+        .right h1 {
+            margin-top: 0;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            color: white;
+            background-color: orange;
+            border: none;
+            border-radius: 25px;
+            text-align: center;
+            text-decoration: none;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        p{
+          color:black;
+        }
+    </style>
+<!--CSS CODE for TECH-FOOTER..............-->
+<style>
+    body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    footer {
+        background-color:rgb(16, 16, 40);
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+    .footer-section {
+        flex: 1;
+        padding: 0 10px;
+    }
+    .footer-section h2 {
+        font-family: Georgia, 'Times New Roman', Times, serif ;
+        color: orange;
+        margin: 0;
+    }
+    h4{
+        color:#f1f1f1;
+    }
+    p{
+        color:#f1f1f1
+    }
+    ul{
+        color: white;
+    }
+    .footer-section .contact-icons {
+        margin-top: 10px;
+    }
+    .footer-section .contact-icons img {
+        border-radius: 100%;
+        margin-right: 10px;
+    }
+    .subscribe-section {
+        display: flex;
+        flex-direction: column;
+    }
+    .subscribe-section input[type="email"] {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        margin-bottom: 10px;
+    }
+    .subscribe-section button {
+        background-color: orange;
+        color: white;
+        justify-content: left;
+        align-items: left;
+        border: none;
+        padding: 10px 20px 10px 10px;
+        margin-left: 0%;
+        margin-right: auto;
+        border-radius: 20px;
+        display: flex;
+        cursor: pointer;
+    }
+</style>
+</head>
+<!--HTML CODE for HEADER PART.............-->
+  <header>
+    <div class="logo">
+        <img src="logo.png">
+        <span><b>Tech Hood Agra</b></span>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#"><b>Home</b></a></li>
+            <li><a href="#"><b>Categories</b></a></li>
+            <li><a href="#"><b>Events</b></a></li>
+            <li><a href="#"><b>About Us</b></a></li>
+        </ul>
+    </nav>
+    <div class="cta">
+        <a href="#" class="sign-up"><i class="fas fa-lock"></i> Sign Up</a>
+        <button class="explore">EXPLORE <i class="fas fa-paper-plane"></i></button>
+    </div>
+</header>
+
+    <!--HTML CODE for HER0 SECTION...............-->
+
+    <section class="hero-section">
+    <div class="tagline">
+        <h1><i><span class="white">INTRODUCING</span> <span class="orange">A</span> <span class="white">TECH</span><br><span class="orange">PLATFORM</span> <span class="white">DESIGNED</span><br><span class="orange">TO</span> <span class="white">NURTURE</span> <span class="white">AND</span> <span class="orange">GROW</span><br><span class="orange">TECH</span> <span class="white">MINDS</span><span class="orange">!</span>
+        </i></h1>
+        <a href="#" class="join-button">Join Community <span class="arrow">→</span></a>
+    </div>
+    <div class="hero-gif">
+        <img src="icon3.png">
+    </div>
+</section>
+
+    <!--HTML CODE for HERO-FOOTER.............-->
+
+    <body class="hero">
+        <div class="hero-footer">
+    
+            <div class="footer-item">
+                <button class="button-advocate"> 🎓</button>
+                <span><br>XYZ Team</span>
+            </div>
+    
+            <div class="footer-item">
+                <button class="button-people">👥</button>
+                <span><br>XYZ Members</span>
+            </div>
+    
+            <div class="footer-item">
+                <button class="button-camera">🎥</button>
+                <span><br>XYZ Workshops</span>
+            </div>
+    
+            <div class="footer-item">
+                <button class="button-group">👨‍👩‍👧‍👦</button>
+                <span><br>XYZ Users</span>
+            </div>
+    
+        </div>
+
+        <!--HTML CODE for SLIDER 1................-->
+
+        <body class="sli-body">
+            <h1><span class="blue">Upcoming</span> <span class="orange">Events</span></h1>
+            <p class="sli-para">Various versions have evolved over the years ,sometimes by accident.</p>
+            <div class="slider-container">
+                <div class="slider">
+                    <div class="slider-header">
+                        <img src="C:\Users\VICTUS\Desktop\workshop2.png">
+                    </div>
+                    <div class="slider-body">
+                        <h2>Welcome</h2>
+                        <div class="rating">
+                            <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="slider-footer">
+                        Workshops
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="slider-header">
+                        <img src= "C:\Users\VICTUS\Desktop\hackathon2.png">
+                    </div>
+                    <div class="slider-body">
+                        <h2>Welcome</h2>
+                        <div class="rating">
+                            <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="slider-footer">
+                        Hackathon
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="slider-header">
+                        <img src="C:\Users\VICTUS\Desktop\quize2.png">
+                    </div>
+                    <div class="slider-body">
+                        <h2>Welcome</h2>
+                        <div class="rating">
+                            <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="slider-footer">
+                        Quizzes
+                    </div>
+                </div>
+                <div class="slider">
+                    <div class="slider-header">
+                        <img src="C:\Users\VICTUS\Desktop\webinar2.png">
+                    </div>
+                    <div class="slider-body">
+                        <h2>Welcome</h2>
+                        <div class="rating">
+                            <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                        </div>
+                    </div>
+                    <div class="slider-footer">
+                        Webinar
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+
+            <!--HTML CODE for SLIDER 2..............-->
+
+            <body class="sli-body">
+                <h1><span class="blue">Most</span> <span class="green">Popular</span> <span class="orange">Events</span></h1>
+                <p class="sli-para">Various versions have evolved over the years,sometimes by accident.</p>
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slider-header">
+                            <img src="C:\Users\VICTUS\Desktop\workshop.png">
+                        </div>
+                        <div class="slider-body">
+                            <h2>Welcome</h2>
+                            <div class="rating">
+                                <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            </div>
+                        </div>
+                        <div class="slider-footer">
+                            Workshops
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="slider-header">
+                            <img src="C:\Users\VICTUS\Desktop\hackathon.png">
+                        </div>
+                        <div class="slider-body">
+                            <h2>Welcome</h2>
+                            <div class="rating">
+                                <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            </div>
+                        </div>
+                        <div class="slider-footer">
+                            Hackathon
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="slider-header">
+                            <img src="C:\Users\VICTUS\Desktop\quizes.png">
+                        </div>
+                        <div class="slider-body">
+                            <h2>Welcome</h2>
+                            <div class="rating">
+                                <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            </div>
+                        </div>
+                        <div class="slider-footer">
+                            Quizzes
+                        </div>
+                    </div>
+                    <div class="slider">
+                        <div class="slider-header">
+                            <img src="C:\Users\VICTUS\Desktop\webinar.png">
+                        </div>
+                        <div class="slider-body">
+                            <h2>Welcome</h2>
+                            <div class="rating">
+                                <span>&#9733;&#9733;&#9733;&#9733;&#9733;</span>
+                            </div>
+                        </div>
+                        <div class="slider-footer">
+                            Webinar
+                        </div>
+                    </div>
+                </div><br><br>
+    
+    <!--HTML CODE for BODY-PORTION.............-->
+    <centre>
+    <body class="body-portion">
+        <div class="container">
+            <div class="left">
+                <img src="C:\Users\VICTUS\Desktop\body.png">
+            </div>
+            <div class="right">
+                <h1><span class="blue">Join</span> <span class="green">Our Growing Learning<br>Community</span> <span class="orange">Today!</span></h1>
+                <h3>Start learning by registering for free and<br>explore the latest in technology and innovation!</h3>
+                <p>Join TechHood where passionate learners and tech enthusiasts connect to<br>share knowledge,ideas, abd opportunities. Explore a vibrant community<br>dedicated to helping you grow and thrive in the tech world!</p>
+                <a href="#" class="button">Sign Up for Free</a>
+            </div>
+        </div></centre><br>
+    
+        <!--HTML CODE for TECH-FOOTER..............-->
+        <body>
+            <footer>
+                <div class="footer-section">
+                    <h2>Tech Hood Agra</h2>
+                    <h4>Contact Us</h4>
+                    <p>call:+123 400 123<br>
+                       Contact us with any questions or<br>feedback- we would love to hear from you!<br><br>
+                       Email: example@mail.com
+                    <div class="contact-icons">
+                        <img src="fb-logo.png" alt="Icon 1" width="24" height="24">
+                        <img src="whatsapp-logo.png" alt="Icon 2" width="24" height="24">
+                        <img src="link-logo.png" alt="Icon 3" width="24" height="24">
+                        <img src="C:\Users\VICTUS\Desktop\insta-logo.jpg" alt="Icon 4" width="24" height="24">
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Explore</h4>
+                    <p>Home<br>About<br>Course<br>Blog<br>Contact</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Events</h4>
+                </div>
+                <div class="footer-section subscribe-section">
+                    <h4>Subscribe</h4>
+                    <p>Subscribe for the latest News and<BR>Updates!</p>
+                    <input type="email" placeholder="Enter your email">
+                    <button>Subscribe Now</button>
+                </div>
+            </footer>
+
+</body>
+</html>
